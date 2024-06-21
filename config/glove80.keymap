@@ -128,12 +128,12 @@
 
         x {
             bindings = <&kp X>;
-            key-positions = <36 35>;
+            key-positions = <36 37>;
         };
 
         k {
             bindings = <&kp K>;
-            key-positions = <43 44>;
+            key-positions = <43 42>;
         };
     };
 
