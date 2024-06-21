@@ -106,13 +106,13 @@
 
         q {
             bindings = <&kp Q>;
-            key-positions = <38 41>;
+            key-positions = <38 37>;
             layers = <0>;
         };
 
         z {
             bindings = <&kp Z>;
-            key-positions = <42 37>;
+            key-positions = <42 41>;
             layers = <0>;
         };
 
@@ -124,6 +124,16 @@
         comma {
             bindings = <&kp COMMA>;
             key-positions = <36 43>;
+        };
+
+        x {
+            bindings = <&kp X>;
+            key-positions = <36 35>;
+        };
+
+        k {
+            bindings = <&kp K>;
+            key-positions = <43 44>;
         };
     };
 
