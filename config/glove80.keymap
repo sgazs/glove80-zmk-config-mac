@@ -141,123 +141,9 @@
             layers = <0>;
         };
 
-        LH-r {
-            bindings = <&kp R>;
-            key-positions = <24 25>;
-            layers = <1>;
-        };
-
-        LH-l {
-            bindings = <&kp L>;
-            key-positions = <24 26>;
-            layers = <1>;
-        };
-
-        LH-d {
-            bindings = <&kp D>;
-            key-positions = <25 26>;
-            layers = <1>;
-        };
-
-        LH-g {
-            bindings = <&kp G>;
-            key-positions = <24 37>;
-            layers = <1>;
-        };
-
-        LH-b {
-            bindings = <&kp B>;
-            key-positions = <24 38>;
-            layers = <1>;
-        };
-
-        LH-w {
-            bindings = <&kp W>;
-            key-positions = <36 25>;
-            layers = <1>;
-        };
-
-        LH-p {
-            bindings = <&kp P>;
-            key-positions = <36 26>;
-            layers = <1>;
-        };
-
-        LH-h {
-            bindings = <&kp H>;
-            key-positions = <36 37>;
-            layers = <1>;
-        };
-
-        LH-a {
-            bindings = <&kp A>;
-            key-positions = <36 38>;
-            layers = <1>;
-        };
-
-        LH-f {
-            bindings = <&kp F>;
-            key-positions = <37 38>;
-            layers = <1>;
-        };
-
-        LH-y {
-            bindings = <&kp Y>;
-            key-positions = <24 50>;
-            layers = <1>;
-        };
-
-        LH-i {
-            bindings = <&kp I>;
-            key-positions = <49 50>;
-            layers = <1>;
-        };
-
-        LH-o {
-            bindings = <&kp O>;
-            key-positions = <38 69>;
-            layers = <1>;
-        };
-
-        LH-u {
-            bindings = <&kp U>;
-            key-positions = <37 69>;
-            layers = <1>;
-        };
-
-        LH-m {
-            bindings = <&kp M>;
-            key-positions = <36 69>;
-            layers = <1>;
-        };
-
-        LH-j {
-            bindings = <&kp J>;
-            key-positions = <50 69>;
-            layers = <1>;
-        };
-
-        LH-q {
-            bindings = <&kp Q>;
-            key-positions = <49 69>;
-            layers = <1>;
-        };
-
-        LH-k {
-            bindings = <&kp K>;
-            key-positions = <25 69>;
-            layers = <1>;
-        };
-
-        LH-dot {
-            bindings = <&kp DOT>;
-            key-positions = <26 69>;
-            layers = <1>;
-        };
-
-        LH-comma {
-            bindings = <&kp COMMA>;
-            key-positions = <24 69>;
+        LH-backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <36 37 38>;
             layers = <1>;
         };
     };
@@ -286,12 +172,12 @@
 
         Left_hand {
             bindings = <
-&none  &none           &none         &none  &none                                                                &none  &none  &none  &none  &none
-&none  &none           &none         &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
-&none  &to 0           &kp S         &kp T  &kp N  &none                                                  &none  &none  &none  &none  &none  &none
-&none  &kp LCTRL       &kp X         &kp C  &kp V  &none                                                  &none  &none  &none  &none  &none  &none
-&none  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp Z  &kp E  &none  &kp TAB      &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none           &none         &none  &none         &lt 2 SPACE  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none
+&none  &none           &none         &none  &none                                                                             &none  &none  &none  &none  &none
+&none  &none           &none         &none  &none           &none                                                      &none  &none  &none  &none  &none  &none
+&none  &to 0           &kp S         &kp A  &kp LEFT_SHIFT  &none                                                      &none  &none  &none  &none  &none  &none
+&none  &kp LCTRL       &kp X         &kp C  &kp V           &none                                                      &none  &none  &none  &none  &none  &none
+&none  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp Z  &kp F           &none  &mt I TAB    &none      &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none           &none         &none  &none                  &lt 2 SPACE  &kp ENTER  &none  &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
