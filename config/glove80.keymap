@@ -215,49 +215,49 @@
 
         LH-o {
             bindings = <&kp O>;
-            key-positions = <36 37 38>;
+            key-positions = <38 69>;
             layers = <1>;
         };
 
         LH-u {
             bindings = <&kp U>;
-            key-positions = <24 25 38>;
+            key-positions = <37 69>;
             layers = <1>;
         };
 
         LH-m {
             bindings = <&kp M>;
-            key-positions = <36 37 50>;
+            key-positions = <36 69>;
             layers = <1>;
         };
 
         LH-j {
             bindings = <&kp J>;
-            key-positions = <36 49 50>;
+            key-positions = <50 69>;
             layers = <1>;
         };
 
         LH-q {
             bindings = <&kp Q>;
-            key-positions = <36 25 26>;
+            key-positions = <49 69>;
             layers = <1>;
         };
 
         LH-k {
             bindings = <&kp K>;
-            key-positions = <37 24 38>;
+            key-positions = <25 69>;
             layers = <1>;
         };
 
         LH-dot {
             bindings = <&kp DOT>;
-            key-positions = <36 25 38>;
+            key-positions = <26 69>;
             layers = <1>;
         };
 
         LH-comma {
             bindings = <&kp COMMA>;
-            key-positions = <36 49 38>;
+            key-positions = <24 69>;
             layers = <1>;
         };
     };
