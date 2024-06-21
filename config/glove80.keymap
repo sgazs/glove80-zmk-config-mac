@@ -120,21 +120,145 @@
         dot {
             bindings = <&kp PERIOD>;
             key-positions = <35 44>;
+            layers = <0 1 2>;
         };
 
         comma {
             bindings = <&kp COMMA>;
             key-positions = <36 43>;
+            layers = <0 2 1>;
         };
 
         x {
             bindings = <&kp X>;
             key-positions = <36 37>;
+            layers = <0>;
         };
 
         k {
             bindings = <&kp K>;
             key-positions = <43 42>;
+            layers = <0>;
+        };
+
+        LH-r {
+            bindings = <&kp R>;
+            key-positions = <24 25>;
+            layers = <6>;
+        };
+
+        LH-l {
+            bindings = <&kp L>;
+            key-positions = <24 26>;
+            layers = <6>;
+        };
+
+        LH-d {
+            bindings = <&kp D>;
+            key-positions = <25 26>;
+            layers = <0>;
+        };
+
+        LH-g {
+            bindings = <&kp G>;
+            key-positions = <24 37>;
+            layers = <0>;
+        };
+
+        LH-b {
+            bindings = <&kp B>;
+            key-positions = <24 38>;
+            layers = <0>;
+        };
+
+        LH-w {
+            bindings = <&kp W>;
+            key-positions = <36 25>;
+            layers = <0>;
+        };
+
+        LH-p {
+            bindings = <&kp P>;
+            key-positions = <36 26>;
+            layers = <0>;
+        };
+
+        LH-h {
+            bindings = <&kp H>;
+            key-positions = <36 37>;
+            layers = <0>;
+        };
+
+        LH-a {
+            bindings = <&kp A>;
+            key-positions = <36 38>;
+            layers = <0>;
+        };
+
+        LH-f {
+            bindings = <&kp F>;
+            key-positions = <37 38>;
+            layers = <0>;
+        };
+
+        LH-y {
+            bindings = <&kp Y>;
+            key-positions = <24 50>;
+            layers = <0>;
+        };
+
+        LH-i {
+            bindings = <&kp I>;
+            key-positions = <49 50>;
+            layers = <0>;
+        };
+
+        LH-o {
+            bindings = <&kp O>;
+            key-positions = <36 37 38>;
+            layers = <0>;
+        };
+
+        LH-u {
+            bindings = <&kp U>;
+            key-positions = <24 25 38>;
+            layers = <0>;
+        };
+
+        LH-m {
+            bindings = <&kp M>;
+            key-positions = <36 37 50>;
+            layers = <0>;
+        };
+
+        LH-j {
+            bindings = <&kp J>;
+            key-positions = <36 49 50>;
+            layers = <0>;
+        };
+
+        LH-q {
+            bindings = <&kp Q>;
+            key-positions = <36 25 26>;
+            layers = <0>;
+        };
+
+        LH-k {
+            bindings = <&kp K>;
+            key-positions = <37 24 38>;
+            layers = <0>;
+        };
+
+        LH-dot {
+            bindings = <&kp DOT>;
+            key-positions = <36 25 38>;
+            layers = <0>;
+        };
+
+        LH-comma {
+            bindings = <&kp COMMA>;
+            key-positions = <36 49 38>;
+            layers = <0>;
         };
     };
 
@@ -151,23 +275,23 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1      &kp F2    &kp F3           &kp F4            &kp F5                                                                                                            &kp F6             &kp F7             &kp F8           &kp F9    &kp F10
-&kp EQUAL   &kp N1    &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT         &kp N5                                                                          &kp N6         &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp N0    &kp MINUS
-&kp TAB     &kp K     &kp L            &kp D             &kp G              &kp Q                                                                           &kp DOT        &kp H              &kp F              &kp Y            &kp X     &kp BSLH
-&kp ESC     &lt 3 A   &hml LEFT_ALT S  &hml LCTRL E      &hml LEFT_SHIFT R  &kp Z                                                                           &kp COMMA      &hmr LEFT_SHIFT N  &hmr LCTRL I       &hmr LEFT_ALT O  &lt 4 T   &kp SQT
-&kp GRAVE   &kp B     &kp W            &kp C             &kp P              &kp SLASH  &kp TAB      &kp SPACE  &none    &none    &tog 5        &kp ESCAPE   &kp SEMICOLON  &kp U              &kp M              &kp V            &kp J     &kp PG_UP
-&magic 6 0  &kp HOME  &kp END          &kp LEFT          &kp RIGHT                     &lt 2 ENTER  &kp DEL    &kp F11  &kp F12  &kp LEFT_GUI  &lt 1 SPACE                 &kp UP             &kp DOWN           &kp LBKT         &kp RBKT  &kp PG_DN
+&none       &none    &none            &none             &none                                                                                             &none              &none              &none            &none    &none
+&none       &none    &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT         &none                                                                   &none  &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &none
+&none       &tog 6   &kp L            &kp D             &kp G              &none                                                                   &none  &kp H              &kp F              &kp Y            &none    &none
+&none       &lt 3 A  &hml LEFT_ALT S  &hml LCTRL E      &hml LEFT_SHIFT R  &none                                                                   &none  &hmr LEFT_SHIFT N  &hmr LCTRL I       &hmr LEFT_ALT O  &lt 4 T  &none
+&none       &kp B    &kp W            &kp C             &kp P              &none  &kp TAB      &kp SPACE  &none  &none  &tog 5        &kp ESCAPE   &none  &kp U              &kp M              &kp V            &kp J    &none
+&magic 7 0  &none    &none            &kp LEFT          &kp RIGHT                 &lt 2 ENTER  &kp DEL    &none  &none  &kp LEFT_GUI  &lt 1 SPACE         &kp UP             &kp DOWN           &none            &none    &none
             >;
         };
 
         Numpad {
             bindings = <
-&none  &none       &none             &none          &none                                                                                 &none                      &none          &none               &none       &none
-&none  &none       &none             &none          &none                     &none                                                &none  &none                      &none          &none               &none       &none
-&none  &none       &kp N7            &kp N8         &kp N9                    &none                                                &none  &kp TAB                    &kp PERCENT    &none               &none       &none
-&none  &kp N0      &hml LEFT_ALT N4  &hml LCTRL N5  &hml LEFT_SHIFT NUMBER_6  &none                                                &none  &hmr LEFT_SHIFT BACKSPACE  &hmr LCTRL AT  &hmr LEFT_ALT HASH  &kp ESCAPE  &none
-&none  &kp DELETE  &kp NUMBER_1      &kp N2         &kp N3                    &none  &none      &none  &none  &none  &none  &none  &none  &kp COMMA                  &kp PERIOD     &none               &none       &none
-&none  &none       &none             &none          &none                            &kp SPACE  &none  &none  &none  &none  &none         &none                      &none          &none               &none       &none
+&none  &none       &none             &none          &none                                                                                 &none                      &none           &none               &none       &none
+&none  &none       &none             &none          &none                     &none                                                &none  &none                      &none           &none               &none       &none
+&none  &none       &kp N7            &kp N8         &kp N9                    &none                                                &none  &kp TAB                    &kp PERCENT     &none               &none       &none
+&none  &kp N0      &hml LEFT_ALT N4  &hml LCTRL N5  &hml LEFT_SHIFT NUMBER_6  &none                                                &none  &hmr LEFT_SHIFT BACKSPACE  &hmr LCTRL AT   &hmr LEFT_ALT HASH  &kp ESCAPE  &none
+&none  &kp DELETE  &kp NUMBER_1      &kp N2         &kp N3                    &none  &none      &none  &none  &none  &none  &none  &none  &kp LC(BACKSPACE)          &kp LC(DELETE)  &caps_word          &none       &none
+&none  &none       &none             &none          &none                            &kp SPACE  &none  &none  &none  &none  &none         &none                      &none           &none               &none       &none
             >;
         };
 
@@ -177,7 +301,7 @@
 &none  &none       &none                     &none             &none                  &none                                                    &none  &none                         &none                     &none                    &none             &none
 &none  &none       &kp SEMICOLON             &kp AMPERSAND     &kp BACKSLASH          &none                                                    &none  &kp PLUS                      &kp ASTERISK              &kp COLON                &none             &none
 &none  &kp DLLR    &hml LEFT_ALT UNDERSCORE  &hml LCTRL EQUAL  &hml LEFT_SHIFT CARET  &none                                                    &none  &hmr LEFT_SHIFT SINGLE_QUOTE  &hmr LCTRL DOUBLE_QUOTES  &hmr LEFT_ALT LESS_THAN  &kp GREATER_THAN  &none
-&none  &kp DELETE  &none                     &kp PIPE          &kp EXCLAMATION        &none  &none  &none  &none  &none  &none  &none          &none  &kp MINUS                     &kp SLASH                 &caps_word               &kp QUESTION      &none
+&none  &kp DELETE  &kp GRAVE                 &kp PIPE          &kp EXCLAMATION        &none  &none  &none  &none  &none  &none  &none          &none  &kp MINUS                     &kp SLASH                 &kp TILDE                &kp QUESTION      &none
 &none  &none       &none                     &none             &none                         &none  &none  &none  &none  &none  &kp BACKSPACE         &none                         &none                     &none                    &none             &none
             >;
         };
@@ -212,6 +336,17 @@
 &none  &kp R  &kp A  &kp W  &kp D  &none                                                         &none  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &none  &none
 &none  &kp T  &kp C  &kp S  &kp E  &none  &kp TAB    &none           &none  &none  &to 0  &none  &none  &none     &kp DOWN      &none      &none  &none
 &none  &none  &none  &none  &none         &kp SPACE  &kp LEFT_SHIFT  &none  &none  &none  &none         &none     &none         &none      &none  &none
+            >;
+        };
+
+        Left_hand {
+            bindings = <
+&none  &none           &none         &none  &none                                                                &none  &none  &none  &none  &none
+&none  &none           &none         &none  &none  &none                                                  &none  &none  &none  &none  &none  &none
+&none  &to 0           &kp S         &kp T  &kp N  &none                                                  &none  &none  &none  &none  &none  &none
+&none  &kp LCTRL       &kp X         &kp C  &kp V  &none                                                  &none  &none  &none  &none  &none  &none
+&none  &kp LEFT_SHIFT  &kp LEFT_ALT  &kp Z  &kp E  &none  &kp TAB      &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none           &none         &none  &none         &lt 1 SPACE  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
