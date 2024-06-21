@@ -106,13 +106,13 @@
 
         q {
             bindings = <&kp Q>;
-            key-positions = <26 29>;
+            key-positions = <38 41>;
             layers = <0>;
         };
 
         z {
             bindings = <&kp Z>;
-            key-positions = <50 59>;
+            key-positions = <42 37>;
             layers = <0>;
         };
     };
