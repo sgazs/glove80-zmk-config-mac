@@ -118,13 +118,13 @@
 
         dot {
             bindings = <&kp PERIOD>;
-            key-positions = <35 44>;
+            key-positions = <38 41>;
             layers = <0 2 3>;
         };
 
         comma {
             bindings = <&kp COMMA>;
-            key-positions = <36 43>;
+            key-positions = <37 42>;
             layers = <0 3 2>;
         };
 
