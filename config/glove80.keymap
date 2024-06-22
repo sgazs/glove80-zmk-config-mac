@@ -165,7 +165,7 @@
 &none       &none    &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT         &none                                                                        &none  &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none    &none
 &none       &tog 1   &kp L            &kp D             &kp G              &none                                                                        &none  &kp H              &kp F              &kp Y            &none    &none
 &none       &lt 4 A  &hml LEFT_ALT S  &hml LCTRL E      &hml LEFT_SHIFT R  &none                                                                        &none  &hmr LEFT_SHIFT N  &hmr LCTRL I       &hmr LEFT_ALT O  &lt 5 T  &none
-&none       &kp B    &kp W            &kp C             &kp P              &none  &kp TAB      &kp SPACE  &none  &none  &tog 6             &kp ESCAPE   &none  &kp U              &kp M              &kp V            &kp J    &none
+&none       &kp J    &kp W            &kp C             &kp P              &none  &kp TAB      &kp SPACE  &none  &none  &tog 6             &kp ESCAPE   &none  &kp U              &kp M              &kp V            &kp B    &none
 &magic 7 0  &none    &none            &kp LEFT          &kp RIGHT                 &lt 3 ENTER  &kp DEL    &none  &none  &mt CAPS LEFT_GUI  &lt 2 SPACE         &kp UP             &kp DOWN           &none            &none    &none
             >;
         };
