@@ -412,7 +412,7 @@
         };
 
         equal {
-            bindings = <&kp EQUAL>;
+            bindings = <&kp KP_EQUAL>;
             key-positions = <38 41>;
             layers = <0>;
         };
