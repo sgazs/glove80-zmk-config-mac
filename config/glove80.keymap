@@ -351,8 +351,8 @@
             layers = <0>;
         };
 
-        backslash {
-            bindings = <&kp BACKSLASH>;
+        slash {
+            bindings = <&kp SLASH>;
             key-positions = <61 60>;
             layers = <0>;
         };
