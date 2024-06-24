@@ -371,13 +371,13 @@
 
         shift_q {
             bindings = <&kp LS(Q)>;
-            key-positions = <38 26>;
+            key-positions = <26 38>;
             layers = <1>;
         };
 
         shift_x {
             bindings = <&kp LS(X)>;
-            key-positions = <37 25>;
+            key-positions = <25 37>;
             layers = <1>;
         };
 
@@ -389,7 +389,7 @@
 
         shift_k {
             bindings = <&kp LS(K)>;
-            key-positions = <42 30>;
+            key-positions = <30 42>;
             layers = <1>;
         };
 
