@@ -150,19 +150,19 @@
         dot {
             bindings = <&kp PERIOD>;
             key-positions = <37 42>;
-            layers = <0 2 2>;
+            layers = <0 3 3>;
         };
 
         comma {
             bindings = <&kp COMMA>;
             key-positions = <43 36>;
-            layers = <0 2 2>;
+            layers = <0 3 3>;
         };
 
         LH-backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <36 37 38>;
-            layers = <5>;
+            layers = <7>;
         };
 
         q {
@@ -192,37 +192,205 @@
         op_paren {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <48 36>;
-            layers = <0>;
+            layers = <1>;
         };
 
         op_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <37 49>;
-            layers = <0>;
+            layers = <1>;
         };
 
         op_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <50 38>;
-            layers = <0>;
+            layers = <1>;
         };
 
         cl_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <41 59>;
-            layers = <0>;
+            layers = <1>;
         };
 
         cl_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <60 42>;
-            layers = <0>;
+            layers = <1>;
         };
 
         cl_paren {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <43 61>;
+            layers = <1>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <24 25>;
             layers = <0>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <25 26>;
+            layers = <0>;
+        };
+
+        bspc {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <29 30>;
+            layers = <0>;
+        };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCL>;
+            key-positions = <35 23>;
+            layers = <0>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <35 47>;
+            layers = <0>;
+        };
+
+        question_mark {
+            bindings = <&kp QUESTION>;
+            key-positions = <36 24>;
+            layers = <0>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <36 48>;
+            layers = <0>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <36 37>;
+            layers = <0>;
+        };
+
+        semicolon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <37 38>;
+            layers = <0>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <37 49>;
+            layers = <0>;
+        };
+
+        asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <49 48>;
+            layers = <0>;
+        };
+
+        plus {
+            bindings = <&kp PLUS>;
+            key-positions = <49 50>;
+            layers = <0>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <49 50>;
+            layers = <0>;
+        };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <59 41>;
+            layers = <0>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <59 60>;
+            layers = <0>;
+        };
+
+        greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <60 42>;
+            layers = <0>;
+        };
+
+        single_quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <42 41>;
+            layers = <0>;
+        };
+
+        double_quotes {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <42 43>;
+            layers = <0>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <43 31>;
+            layers = <0>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <43 61>;
+            layers = <0>;
+        };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <61 60>;
+            layers = <0>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <62 44>;
+            layers = <0>;
+        };
+
+        at_sign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <44 32>;
+            layers = <0>;
+        };
+
+        shift_q {
+            bindings = <&kp LS(Q)>;
+            key-positions = <38 26>;
+            layers = <1>;
+        };
+
+        shift_x {
+            bindings = <&kp LS(X)>;
+            key-positions = <37 25>;
+            layers = <1>;
+        };
+
+        shift_z {
+            bindings = <&kp LS(Z)>;
+            key-positions = <29 41>;
+            layers = <1>;
+        };
+
+        shift_k {
+            bindings = <&kp LS(K)>;
+            key-positions = <42 30>;
+            layers = <1>;
         };
     };
 
@@ -241,10 +409,21 @@
             bindings = <
 &to 0       &none          &none            &none             &none                                                                                                              &none              &none              &none            &none   &none
 &none       &none          &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT         &none                                                                                    &none  &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none   &none
-&none       &TTLayer 7 6   &kp L            &kp D             &kp W              &none                                                                                    &none  &kp Y              &kp F              &kp U            &tog 5  &none
-&none       &layerTap 3 A  &hml LEFT_ALT S  &hml LCTRL E      &hml LEFT_SHIFT R  &none                                                                                    &none  &hmr LEFT_SHIFT N  &hmr LCTRL I       &hmr LEFT_ALT O  &kp T   &none
-&none       &kp J          &kp G            &kp C             &kp P              &none  &kp TAB            &kp SPACE  &none  &none  &none              &lt 4 ESCAPE       &none  &kp H              &kp M              &kp V            &kp B   &none
-&magic 8 0  &none          &none            &kp LEFT          &kp RIGHT                 &layerTap 2 ENTER  &kp DEL    &none  &none  &mt CAPS LEFT_GUI  &layerTap 1 SPACE         &kp UP             &kp DOWN           &none            &none   &none
+&none       &TTLayer 8 7   &kp L            &kp D             &kp W              &none                                                                                    &none  &kp Y              &kp F              &kp U            &tog 6  &none
+&none       &layerTap 4 A  &hml LEFT_ALT S  &hml LCTRL E      &hml LEFT_SHIFT R  &none                                                                                    &none  &hmr LEFT_SHIFT N  &hmr LCTRL I       &hmr LEFT_ALT O  &kp T   &none
+&none       &kp J          &kp G            &kp C             &kp P              &none  &kp TAB            &kp SPACE  &none  &none  &none              &lt 5 ESCAPE       &none  &kp H              &kp M              &kp V            &kp B   &none
+&magic 9 0  &none          &none            &kp LEFT          &kp RIGHT                 &layerTap 3 ENTER  &kp DEL    &none  &none  &mt CAPS LEFT_GUI  &layerTap 2 SPACE         &kp UP             &kp DOWN           &none            &none   &none
+            >;
+        };
+
+        Shifted_base {
+            bindings = <
+&to 0       &none         &none                &none             &none                                                                                                                  &none              &none              &none            &none   &none
+&none       &none         &kp C_PREVIOUS       &kp C_PLAY_PAUSE  &kp C_NEXT             &none                                                                                    &none  &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none   &none
+&none       &TTLayer 8 7  &kp LS(L)            &kp LS(D)         &kp LS(W)              &none                                                                                    &none  &kp LS(Y)          &kp LS(F)          &kp LS(U)        &tog 6  &none
+&none       &kp LS(A)     &hml LEFT_ALT LS(S)  &hml LCTRL LS(E)  &hml LEFT_SHIFT LS(R)  &none                                                                                    &none  &hmr LEFT_SHIFT N  &hmr LCTRL I       &hmr LEFT_ALT O  &kp T   &none
+&none       &kp LS(J)     &kp LS(G)            &kp LS(C)         &kp LS(P)              &none  &kp TAB            &kp SPACE  &none  &none  &none              &lt 5 ESCAPE       &none  &kp LS(H)          &kp M              &kp V            &kp B   &none
+&magic 9 0  &none         &none                &kp LEFT          &kp RIGHT                     &layerTap 3 ENTER  &kp DEL    &none  &none  &mt CAPS LEFT_GUI  &layerTap 2 SPACE         &kp UP             &kp DOWN           &none            &none   &none
             >;
         };
 
