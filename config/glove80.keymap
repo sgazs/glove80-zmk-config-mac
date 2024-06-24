@@ -167,6 +167,26 @@
             key-positions = <36 37 38>;
             layers = <5>;
         };
+
+        q {
+            bindings = <&kp Q>;
+            key-positions = <72 38>;
+        };
+
+        z {
+            bindings = <&kp Z>;
+            key-positions = <69 41>;
+        };
+
+        x {
+            bindings = <&kp X>;
+            key-positions = <72 37>;
+        };
+
+        k {
+            bindings = <&kp K>;
+            key-positions = <69 42>;
+        };
     };
 
     keymap {
