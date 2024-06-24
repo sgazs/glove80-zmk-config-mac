@@ -143,6 +143,30 @@
             key-positions = <36 37 38>;
             layers = <5>;
         };
+
+        q {
+            bindings = <&kp Q>;
+            key-positions = <38 37>;
+            layers = <0>;
+        };
+
+        x {
+            bindings = <&kp X>;
+            key-positions = <37 36>;
+            layers = <0>;
+        };
+
+        z {
+            bindings = <&kp Z>;
+            key-positions = <41 42>;
+            layers = <0>;
+        };
+
+        k {
+            bindings = <&kp K>;
+            key-positions = <42 43>;
+            layers = <0>;
+        };
     };
 
     keymap {
