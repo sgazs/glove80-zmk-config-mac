@@ -416,6 +416,12 @@
             key-positions = <41 38>;
             layers = <0>;
         };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <38 50>;
+            layers = <0>;
+        };
     };
 
     keymap {
