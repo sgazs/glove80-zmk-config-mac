@@ -175,6 +175,42 @@
             key-positions = <42 30>;
             layers = <0>;
         };
+
+        op_paren {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <48 36>;
+            layers = <0>;
+        };
+
+        op_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <37 49>;
+            layers = <0>;
+        };
+
+        op_brace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <50 38>;
+            layers = <0>;
+        };
+
+        cl_brace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <41 59>;
+            layers = <0>;
+        };
+
+        cl_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <60 42>;
+            layers = <0>;
+        };
+
+        cl_paren {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <43 61>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -193,7 +229,7 @@
 &to 0       &none          &none            &none             &none                                                                                                              &none              &none              &none            &none          &none
 &none       &none          &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT         &none                                                                                    &none  &kp C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none          &none
 &none       &TTLayer 7 6   &kp L            &kp D             &kp W              &none                                                                                    &none  &kp Y              &kp F              &kp U            &tog 5         &none
-&none       &layerTap 3 A  &hml LEFT_ALT S  &hml LCTRL E      &hml LEFT_SHIFT R  &none                                                                                    &none  &hmr LEFT_SHIFT N  &hmr LCTRL I       &hmr LEFT_ALT O  &layerTap 9 T  &none
+&none       &layerTap 3 A  &hml LEFT_ALT S  &hml LCTRL E      &hml LEFT_SHIFT R  &none                                                                                    &none  &hmr LEFT_SHIFT N  &hmr LCTRL I       &hmr LEFT_ALT O  &layerTap 0 T  &none
 &none       &kp J          &kp G            &kp C             &kp P              &none  &kp TAB            &kp SPACE  &none  &none  &none              &lt 4 ESC          &none  &kp H              &kp M              &kp V            &kp B          &none
 &magic 8 0  &none          &none            &kp LEFT          &kp RIGHT                 &layerTap 2 ENTER  &kp DEL    &none  &none  &mt CAPS LEFT_GUI  &layerTap 1 SPACE         &kp UP             &kp DOWN           &none            &none          &none
             >;
@@ -284,17 +320,6 @@
 &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
 &sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
 &none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &to 0
-            >;
-        };
-
-        zkqx {
-            bindings = <
-&trans  &none  &none  &none  &none                                                          &none  &none  &none  &none  &none
-&none   &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
-&none   &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
-&none   &kp Z  &kp Q  &kp J  &kp X  &none                                            &none  &none  &none  &none  &none  &none
-&none   &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none   &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
     };
