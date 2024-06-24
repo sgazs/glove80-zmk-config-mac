@@ -126,18 +126,6 @@
     combos {
         compatible = "zmk,combos";
 
-        q {
-            bindings = <&kp Q>;
-            key-positions = <38 37>;
-            layers = <0>;
-        };
-
-        z {
-            bindings = <&kp Z>;
-            key-positions = <42 41>;
-            layers = <0>;
-        };
-
         dot {
             bindings = <&kp PERIOD>;
             key-positions = <37 42>;
@@ -148,18 +136,6 @@
             bindings = <&kp COMMA>;
             key-positions = <43 36>;
             layers = <0 2 2>;
-        };
-
-        x {
-            bindings = <&kp X>;
-            key-positions = <36 37>;
-            layers = <0>;
-        };
-
-        k {
-            bindings = <&kp K>;
-            key-positions = <43 42>;
-            layers = <0>;
         };
 
         LH-backspace {
