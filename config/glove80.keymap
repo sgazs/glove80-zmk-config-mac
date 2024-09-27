@@ -191,7 +191,7 @@ bindings = <&rgb_ug RGB_STATUS>;
 &trans  &trans    &hm LCTRL L   &hm LALT D        &hm LEFT_GUI W  &trans                                                                                       &trans  &hm RIGHT_GUI Y    &hm LEFT_ALT F  &hm RCTRL U      &trans    &trans
 &trans  &hl 2 A   &hl 3 S       &hl 4 E           &hl 4 R         &trans                                                                                       &trans  &hl 4 N            &hl 4 I         &hl 3 O          &hl 2 T   &trans
 &trans  &kp J     &kp G         &kp C             &kp P           &trans  &hl 6 TAB             &kp LEFT_SHIFT  &trans       &trans  &trans       &key_repeat  &trans  &kp H              &kp M           &kp V            &kp B     &trans
-&magic 7 0  &kp DOWN  &kp UP_ARROW  &kp LEFT          &kp RIGHT               &td LEFT_SHIFT SPACE  &kp SPACE       &kp LCTRL    &trans  &key_repeat  &alpha2 1 0          &kp LEFT           &kp RIGHT       &kp UP           &kp DOWN  &trans
+&magic 7 0  &kp DOWN  &kp UP_ARROW  &kp LEFT          &kp RIGHT               &td LEFT_SHIFT SPACE  &kp LCTRL       &kp SPACE    &kp SPACE  &kp LEFT_SHIFT  &alpha2 1 0          &kp LEFT           &kp RIGHT       &kp UP           &kp DOWN  &trans
             >;
         };
 
