@@ -50,7 +50,7 @@
         hl: hl {
             compatible = "zmk,behavior-hold-tap";
             label = "HL";
-            bindings = <&msl>, <&kp>;
+            bindings = <&sl>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <220>;
