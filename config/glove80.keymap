@@ -215,7 +215,7 @@
 &to 0       &trans    &to 7         &trans            &trans                                                                                                                     &trans             &trans          &trans           &trans    &trans
 &trans      &trans    &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT      &trans                                                                                             &trans  &kp C_VOLUME_DOWN  &kp C_MUTE      &kp C_VOLUME_UP  &trans    &trans
 &trans      &trans    &hm LCTRL L   &hm LALT D        &hm LEFT_GUI W  &trans                                                                                             &trans  &hm RIGHT_GUI Y    &hm LEFT_ALT F  &hm RCTRL U      &trans    &trans
-&trans      &hl 2 A   &hl 3 S       &mt X E           &hl 4 R         &trans                                                                                             &trans  &hl 4 N            &mt K I         &hl 3 O          &hl 2 T   &trans
+&trans      &hl 2 A   &hl 3 T       &mt X E           &hl 4 R         &trans                                                                                             &trans  &hl 4 N            &mt K I         &hl 3 O          &hl 2 S   &trans
 &trans      &kp J     &mt Q G       &mt Z C           &mt K P         &trans  &hl 6 TAB               &kp LEFT_SHIFT  &trans     &trans     &trans          &key_repeat  &trans  &mt Q H            &mt X M         &mt Z V          &kp B     &trans
 &magic 8 0  &kp DOWN  &kp UP_ARROW  &kp LEFT          &kp RIGHT               &kpsk LEFT_SHIFT SPACE  &kp LCTRL       &kp SPACE  &kp SPACE  &kp LEFT_SHIFT  &msl 1               &kp LEFT           &kp RIGHT       &kp UP           &kp DOWN  &trans
             >;
