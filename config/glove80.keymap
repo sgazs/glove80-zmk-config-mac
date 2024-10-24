@@ -143,20 +143,6 @@
             bindings = <&rgb_ug RGB_STATUS>;
         };
 
-        msk: sk {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &sk MACRO_PLACEHOLDER>;
-            label = "SK";
-        };
-
-        msl: sl {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1 &sl MACRO_PLACEHOLDER>;
-            label = "SL";
-        };
-
         bt_0: bt_profile_macro_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -181,10 +167,37 @@
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
 
-        bt_4: bt_profile_macro_4 {
+        alpha2macro: alpha2macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 4>;
+            bindings = <&msl 1>;
+            label = "ALPHA2MACRO";
+        };
+
+        msk: sk {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &sk MACRO_PLACEHOLDER>;
+            label = "SK";
+        };
+
+        msl: sl {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &sl MACRO_PLACEHOLDER>;
+            label = "SL";
+        };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&to 10>,
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_pause_for_release>;
+
+            label = "ALT_TAB";
         };
     };
 
@@ -255,12 +268,12 @@
 
         System {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &mo 9   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &mo 9     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &alt_tab  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans
             >;
         };
 
@@ -310,12 +323,12 @@
 
         magic_layer {
             bindings = <
-&bt BT_CLR   &bt BT_DISC 0    &out OUT_BLE     &bt BT_SEL 4     &bt BT_CLR_ALL                                                                          &none  &none       &none  &none  &none
-&none        &none            &none            &none            &none            &none                                                           &none  &none  &none       &none  &none  &none
-&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                 &none  &none  &none       &none  &none  &none
-&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                 &none  &none  &none       &none  &none  &bootloader
-&sys_reset   &none            &none            &none            &none            &none bt_2 bt_3 bt_4  &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset  &none  &none  &none
-&none        &none bt_0 bt_1  &out OUT_USB     &none            &none                                  &none  &none  &none  &none  &none  &none
+&bt BT_CLR   &bt BT_DISC 0    &out OUT_BLE     &bt BT_SEL 4     &bt BT_CLR_ALL                                                                            &none  &none  &none  &none  &none
+&none        &none            &none            &none            &none            &none                                                             &none  &none  &none  &none  &none  &none
+&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
+&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
+&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &bt BT_SEL 0  &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
@@ -323,9 +336,9 @@
             bindings = <
 &trans  &trans  &trans                  &trans                  &trans                                                                                   &trans                  &trans                   &trans  &trans  &trans
 &trans  &trans  &trans                  &trans                  &trans                   &trans                                                  &trans  &trans                  &trans                   &trans  &trans  &trans
-&trans  &trans  &kp LA(LC(U))           &kp LA(LC(UP_ARROW))    &kp LC(LA(I))            &trans                                                  &trans  &kp LA(LC(PLUS))        &kp LA(LC(MINUS))        &trans  &trans  &trans
+&trans  &trans  &kp LA(LC(U))           &kp LA(LC(UP_ARROW))    &kp LC(LA(I))            &trans                                                  &trans  &trans                  &kp LA(LC(BACKSLASH))    &trans  &trans  &trans
 &trans  &trans  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(ENTER))       &kp LA(LC(RIGHT_ARROW))  &trans                                                  &trans  &kp LA(LG(LEFT_ARROW))  &kp LG(LA(RIGHT_ARROW))  &trans  &trans  &trans
-&trans  &trans  &kp LC(LA(J))           &kp LA(LC(DOWN_ARROW))  &kp LA(LC(K))            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LC(BACKSLASH))   &trans                   &trans  &trans  &trans
+&trans  &trans  &kp LC(LA(J))           &kp LA(LC(DOWN_ARROW))  &kp LA(LC(K))            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans                   &trans  &trans  &trans
 &trans  &trans  &trans                  &trans                  &trans                           &trans  &trans  &trans  &trans  &trans  &trans          &trans                  &trans                   &trans  &trans  &trans
             >;
         };
