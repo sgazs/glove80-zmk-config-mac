@@ -233,12 +233,12 @@
 
         num {
             bindings = <
-&trans  &trans  &trans            &trans       &trans                                                                                        &trans        &trans             &trans           &trans  &trans
-&trans  &trans  &trans            &trans       &trans              &trans                                                            &trans  &trans        &trans             &trans           &trans  &trans
-&trans  &trans  &kp PERCENT       &kp CARET    &trans              &trans                                                            &trans  &kp PLUS      &kp MINUS          &kp POUND        &trans  &trans
-&trans  &trans  &hm LEFT_GUI DOT  &hm LALT N0  &hm LCTRL NUMBER_1  &trans                                                            &trans  &hm LCTRL N2  &hm RALT NUMBER_3  &hm LEFT_GUI N4  &trans  &trans
-&trans  &none   &kp PLUS          &kp N5       &kp N6              &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &kp N7        &kp N8             &kp N9           &trans  &trans
-&trans  &trans  &trans            &trans       &trans                      &sr LEFT_SHIFT 0  &trans  &trans  &trans  &trans  &trans          &trans        &trans             &trans           &trans  &trans
+&trans  &trans  &trans            &trans        &trans                                                                                           &trans           &trans              &trans           &trans  &trans
+&trans  &trans  &trans            &trans        &trans                 &trans                                                            &trans  &trans           &trans              &trans           &trans  &trans
+&trans  &trans  &kp PERCENT       &kp CARET     &trans                 &trans                                                            &trans  &kp PLUS         &kp MINUS           &kp POUND        &trans  &trans
+&trans  &trans  &hm LEFT_GUI DOT  &hm LCTRL N0  &hm LEFT_ALT NUMBER_1  &trans                                                            &trans  &hm LEFT_ALT N2  &hm LCTRL NUMBER_3  &hm LEFT_GUI N4  &trans  &trans
+&trans  &none   &kp PLUS          &kp N5        &kp N6                 &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &kp N7           &kp N8              &kp N9           &trans  &trans
+&trans  &trans  &trans            &trans        &trans                         &sr LEFT_SHIFT 0  &trans  &trans  &trans  &trans  &trans          &trans           &trans              &trans           &trans  &trans
             >;
         };
 
