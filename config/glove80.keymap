@@ -166,7 +166,7 @@
                 <&kp LEFT_GUI>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&to 0>;
+                <&kp LEFT_GUI &to 0>;
 
             label = "ALT_TAB";
         };
