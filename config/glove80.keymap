@@ -333,7 +333,7 @@
             >;
         };
 
-        macOS_WindowManagement {
+        macOS_Magnet {
             bindings = <
 &trans  &trans  &trans                  &trans                  &trans                                                                                   &trans                  &trans                   &trans  &trans  &trans
 &trans  &trans  &trans                  &trans                  &trans                   &trans                                                  &trans  &trans                  &trans                   &trans  &trans  &trans
@@ -344,14 +344,14 @@
             >;
         };
 
-        macOS_AltTab {
+        macOS_WinNav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans       &trans   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans       &trans   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans       &trans   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp LS(TAB)  &kp TAB  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans       &trans   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                                                  &trans       &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans       &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp Q        &kp GRAVE  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp LS(TAB)  &kp TAB    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N        &kp W      &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans       &trans     &trans  &trans  &trans
             >;
         };
     };
