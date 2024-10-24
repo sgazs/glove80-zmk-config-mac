@@ -44,7 +44,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 7>, <&to 7>;
+            bindings = <&mo 8>, <&to 8>;
         };
 
         hl: hl {
@@ -121,6 +121,18 @@
             require-prior-idle-ms = <50>;
             flavor = "tap-preferred";
         };
+
+        sl_hl: sl_hl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SL_HL";
+            bindings = <&mo>, <&msl>;
+
+            #binding-cells = <2>;
+            hold-trigger-on-release;
+            tapping-term-ms = <190>;
+            require-prior-idle-ms = <50>;
+            flavor = "tap-preferred";
+        };
     };
 
     macros {
@@ -175,13 +187,25 @@
             bindings = <&macro_param_1to1 &sl MACRO_PLACEHOLDER>;
             label = "SL";
         };
+
+        alt_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&to 10>,
+                <&macro_press>,
+                <&kp LEFT_GUI>,
+                <&macro_pause_for_release>;
+
+            label = "ALT_TAB";
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         combo_sys {
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             key-positions = <41 42 43>;
             timeout-ms = <30>;
         };
@@ -211,23 +235,23 @@
 
         alpha1 {
             bindings = <
-&to 0       &trans    &to 6           &trans            &trans                                                                                                                  &trans             &trans          &trans           &trans    &trans
+&to 0       &trans    &to 7           &trans            &trans                                                                                                                  &trans             &trans          &trans           &trans    &trans
 &trans      &trans    &kp C_PREV      &kp C_PLAY_PAUSE  &kp C_NEXT   &trans                                                                                             &trans  &kp C_VOLUME_DOWN  &kp C_MUTE      &kp C_VOLUME_UP  &trans    &trans
 &trans      &trans    &hm LEFT_ALT L  &hm LEFT_GUI D    &hm LCTRL W  &trans                                                                                             &trans  &hm LCTRL Y        &hm LEFT_GUI F  &hm LEFT_ALT U   &trans    &trans
-&trans      &hl 2 A   &hl 3 S         &mt X E           &hl 4 R      &trans                                                                                             &trans  &hl 4 N            &mt K I         &hl 3 O          &hl 2 T   &trans
-&trans      &kp J     &mt Q G         &mt Z C           &mt K P      &trans  &hl 5 TAB               &kp LEFT_SHIFT  &trans     &trans     &trans          &key_repeat  &trans  &mt Q H            &mt X M         &mt Z V          &kp B     &trans
-&magic 7 0  &kp DOWN  &kp UP_ARROW    &kp LEFT          &kp RIGHT            &kpsk LEFT_SHIFT SPACE  &kp LCTRL       &kp SPACE  &kp SPACE  &kp LEFT_SHIFT  &msl 1               &kp LEFT           &kp RIGHT       &kp UP           &kp DOWN  &trans
+&trans      &hl 2 A   &hl 4 S         &mt X E           &hl 5 R      &trans                                                                                             &trans  &hl 5 N            &mt K I         &hl 4 O          &hl 2 T   &trans
+&trans      &kp J     &mt Q G         &mt Z C           &mt K P      &trans  &hl 6 TAB               &kp LEFT_SHIFT  &trans     &trans     &trans          &key_repeat  &trans  &mt Q H            &mt X M         &mt Z V          &kp B     &trans
+&magic 8 0  &kp DOWN  &kp UP_ARROW    &kp LEFT          &kp RIGHT            &kpsk LEFT_SHIFT SPACE  &kp LCTRL       &kp SPACE  &kp SPACE  &kp LEFT_SHIFT  &sl_hl 3 1           &kp LEFT           &kp RIGHT       &kp UP           &kp DOWN  &trans
             >;
         };
 
         alpha2 {
             bindings = <
-&trans  &trans  &trans   &trans     &trans                                                                                &trans      &trans       &trans             &trans  &trans
-&trans  &trans  &trans   &trans     &trans       &trans                                                           &trans  &trans      &trans       &trans             &trans  &trans
-&trans  &trans  &trans   &trans     &trans       &trans                                                           &trans  &kp HASH    &kp EQUAL    &kp UNDERSCORE     &trans  &trans
-&trans  &trans  &kp SQT  &kp TILDE  &kp AT_SIGN  &trans                                                           &trans  &kp PERIOD  &kp COMMA    &kp DOUBLE_QUOTES  &trans  &trans
-&trans  &trans  &trans   &trans     &trans       &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans  &kp DLLR    &kp PERCENT  &kp CARET          &trans  &trans
-&trans  &trans  &trans   &trans     &trans               &msk LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans          &trans      &trans       &trans             &trans  &trans
+&trans  &trans  &trans   &trans         &trans                                                                                &trans      &trans       &trans             &trans  &trans
+&trans  &trans  &trans   &trans         &trans       &trans                                                           &trans  &trans      &trans       &trans             &trans  &trans
+&trans  &trans  &trans   &trans         &trans       &trans                                                           &trans  &kp HASH    &kp EQUAL    &kp UNDERSCORE     &trans  &trans
+&trans  &trans  &kp SQT  &kp LS(GRAVE)  &kp AT_SIGN  &trans                                                           &trans  &kp PERIOD  &kp COMMA    &kp DOUBLE_QUOTES  &trans  &trans
+&trans  &trans  &trans   &trans         &trans       &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans  &kp DLLR    &kp PERCENT  &kp LS(NUMBER_6)   &trans  &trans
+&trans  &trans  &trans   &trans         &trans               &msk LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans          &trans      &trans       &trans             &trans  &trans
             >;
         };
 
@@ -239,6 +263,17 @@
 &trans  &trans  &hm LEFT_GUI DOT  &hm LCTRL N0  &hm LEFT_ALT NUMBER_1  &trans                                                            &trans  &hm LEFT_ALT N2  &hm LCTRL NUMBER_3  &hm LEFT_GUI N4  &trans  &trans
 &trans  &none   &kp PLUS          &kp N5        &kp N6                 &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &kp N7           &kp N8              &kp N9           &trans  &trans
 &trans  &trans  &trans            &trans        &trans                         &sr LEFT_SHIFT 0  &trans  &trans  &trans  &trans  &trans          &trans           &trans              &trans           &trans  &trans
+            >;
+        };
+
+        System {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &mo 9     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &alt_tab  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans
             >;
         };
 
@@ -294,6 +329,28 @@
 &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
 &sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &bt BT_SEL 0  &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
 &none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &none
+            >;
+        };
+
+        macOS_WindowManagement {
+            bindings = <
+&trans  &trans  &trans                  &trans                  &trans                                                                                   &trans                  &trans                   &trans  &trans  &trans
+&trans  &trans  &trans                  &trans                  &trans                   &trans                                                  &trans  &trans                  &trans                   &trans  &trans  &trans
+&trans  &trans  &kp LA(LC(U))           &kp LA(LC(UP_ARROW))    &kp LC(LA(I))            &trans                                                  &trans  &trans                  &kp LA(LC(BACKSLASH))    &trans  &trans  &trans
+&trans  &trans  &kp LA(LC(LEFT_ARROW))  &kp LA(LC(ENTER))       &kp LA(LC(RIGHT_ARROW))  &trans                                                  &trans  &kp LA(LG(LEFT_ARROW))  &kp LG(LA(RIGHT_ARROW))  &trans  &trans  &trans
+&trans  &trans  &kp LC(LA(J))           &kp LA(LC(DOWN_ARROW))  &kp LA(LC(K))            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans                   &trans  &trans  &trans
+&trans  &trans  &trans                  &trans                  &trans                           &trans  &trans  &trans  &trans  &trans  &trans          &trans                  &trans                   &trans  &trans  &trans
+            >;
+        };
+
+        macOS_AltTab {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans       &trans   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans       &trans   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans       &trans   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &kp LS(TAB)  &kp TAB  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans       &trans   &trans  &trans  &trans
             >;
         };
     };
